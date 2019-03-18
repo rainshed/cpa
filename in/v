@@ -1,0 +1,37 @@
+c----------------------Fe------------------------------------
+    go   data/v
+c------------------------------------------------------------
+c   brvtyp     a        c/a   b/a   alpha   beta   gamma
+    bcc      5.54  ,     ,      ,      ,       ,      ,
+c------------------------------------------------------------
+c   edelt    ewidth    reltyp   sdftyp   magtyp   record
+    0.001     1.0       nrl      mjw      mag      2nd
+c------------------------------------------------------------
+c   outtyp    bzqlty   maxitr   pmix
+    update     8        100   0.035
+c------------------------------------------------------------
+c    ntyp
+     1
+c------------------------------------------------------------
+c   type    ncmp    rmt    field   mxl  anclr   conc
+    V       1       1      0.0     4
+                                          23    100
+c------------------------------------------------------------
+c   natm
+     1
+c------------------------------------------------------------
+c   atmicx(in the unit of a)     atmtyp
+     0         0          0        V
+c
+ end
+
+c  the following data are used to get energy dispersion curves
+c  along G-H-N-P-G-N (suitable for bcc BZ)
+ 300
+ 0 0 0
+ 0 1 0
+ 0.5 0.5 0
+ 0.5 0.5 0.5
+ 0 0 0
+ 0.5 0.5 0
+

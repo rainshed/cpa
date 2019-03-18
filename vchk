@@ -1,0 +1,16 @@
+#!/bin/csh
+./specx<in/co>out/co
+./specx<in/fe>out/fe
+./specx<in/fe_h>out/fe_h
+./specx<in/fe_lmd>out/fe_lmd
+./specx<in/gaas>out/gaas
+./specx<in/licoo2>out/licoo2
+./specx<in/mgh2>out/mgh2
+./specx<in/nife>out/nife
+./specx<in/cras>out/cras
+./specx<in/fe2val>out/fe2val
+./specx<in/fe_latt>out/fe_latt
+./specx<in/fe_ru>out/fe_ru
+./specx<in/li>out/li
+./specx<in/mg>out/mg
+./specx<in/ni>out/ni

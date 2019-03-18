@@ -1,0 +1,199 @@
+------- version 25 Feb. 2018 ------- by H. Akai
+Major revise:
+Dynamical allocation of memory is introduced and the program
+is now indepent to the size of the system to be calculated.
+Accordingly the code must be compiled by Fortran 90 compiler.
+It is not necessary anumore to modified the parameter statemets
+depending on the system size.
+
+Some additional feature:
+In addition to fcc, bcc, etc., it is possible to specify
+"aux" or "prv". If either one of them is specified system
+recognize that 3 primitive unit vector followed by lattice
+constant will be given, such as
+
+  aux  -0.5 0.5 0.5  0.5 -0.5 0.5  0.5 0.5 -0.5  5.27
+
+for bcc with the lattice constant a=5.27 (a.u.)
+In this case c/a, b/a, alpha, beta, and gamma should be
+omitted.
+
+Also, it is now possible to tilet the crystal axis. It is
+done by using "tlt" keyword attached after bravai type
+or "aux" ("prv"), like
+
+  fcctlt  0 90 0  6.65
+
+or
+
+  auxtlt  -0.5 0.5 0.5  0.5 -0.5 0.5  0.5 0.5 -0.5 0 90 0  5.27
+
+In both cases crystal is tilted by Euler angle (0, 90, 0).
+
+------- version 26 Feb. 2017 ------- by H. Akai
+'etaopt' is modified to avoid trouble that may occur for
+systms with very large lattice constants or in the calculation of
+the state with very high energy, say > 40 eV.
+'genrpt' and 'gengpt' are slightly modifies
+.
+------- version 22 Feb, 2017 ------- by H. Akai
+Rather minor changes have been made.
+subroutine 'sbrnch' is slightly modified to incerese stability.
+A new subroutine 'radals' is introduced to increase the accuracy
+of the calculation of rafial wavefunctions in ithe semi-relativistic
+case.
+------- version 7 Aug. 2015 -------- by H. Akai
+This version support openMP for both ifort and gfortran. In order to
+avoid the stack size problem occuring in gfortran when arraies larger
+than 2**16 are used as private in a parallelized region, dynamical
+allocations are used in the parallel regions. This is not necessary
+for ifort, but ths method seems not a drawback for ifort.
+In this version it is not necessary to specify to se the environmet
+variable KMP_STACKSIZE. However, number of threads has to be
+specified (otherwise it may runs only using a single thread, depending
+on the system).
+
+Another new feature provided by this version is the  "spc" program that
+plots a dispersion irelation (or broadened dispersion/Bloch spectrum
+function for alloy cases) if gnuplot is installed. If "spc" is specified
+instead of "go", then the program create data/file_up.spc and
+data/file_dn.spc, where data/file is the file specified as a
+data file in the input. Using the command
+
+> spc data/file_up.spc
+
+will plot the dispersion on a gnuplot window. In the input data
+some additonal data specifying the symmetry points are needed
+in addition to the number of k-points that will be plotted.
+For example, input data like
+
+spc data/nife
+fcc 6.65 , , , , , ,   
+0.001 1.0 nrl mjw mag 2nd 
+update 4 50 0.03
+1   
+NiFe 2 1 0.0 2 26 40  
+               28 60  
+1   
+0 0 0 NiFe
+c------- below needed only for "spc" cases
+c---number of k-point used for the plot
+300
+c--- W-point
+1 0.5 0
+c--- L-point
+0.5 0.5 0.5
+c---  Gamma-point
+0 0 0
+c--- X-point
+1 0 0
+c--- W-point
+1 0.5 0
+c--- K-point
+0.75 0.75 0
+
+will will areate data/nife_up.spc and data/nife_dn.spc.
+Then
+
+> spc data/nife_up.spc
+> spc data/nife_dn.spc
+plot the broadend dispersion curves for spin up and down
+states of Ni40Fe60 disorderd alloy allong the W-L-Gamma-X-W-K
+symmetry lines using 300 k-points. To create the "spc" command,
+just type
+
+> make spc
+
+This is a similar procedure to obtain "gdp" command that plot
+the DOS curve on a gnuplot window using "make gdp".
+
+Other bugs such as related to the symmetry procedure,
+in particular for the case of the spin-orbit coupling
+included, have been fixed.
+
+------- version 30 Sep. 2014 -------- by H. Akai
+In this version calculation with the spin-orbit coupling becomes
+possible. Even the old version can treat the spin-orbit coupling
+(not supported) but the results were not correct when the inversion
+symmtery is missinb. In order to switch-on the spin-orbit coupling
+use "srals" or "lssra" for the relativistic option. "nrlls" or
+"lsnrl" also works but it sounds a bit strange.
+
+In the former version, OpenMP failed when "srals' option is
+specified, but in this version OpenMP works perfectly. Do not
+forget to set KMP_STACKSIZE and OMP_NUM_THREADS when using
+OpenMP.
+
+The sample of input and output are seen in the directory "sample".
+The shell script "vchk" may be used to run all those sample inputs
+and to compare the results with sample ourputs
+
+In order to complie and and excecution file "specx", just type
+"make". The makefile is adapted to the intel compiler but you
+may easily change the compiler and option by editting couple
+of line in the makefile.
+
+Revised subroutines
+   specx.f
+   spmain.f
+   spckkr.f
+   bzmesh.f
+   kkrsed.f
+   brvsym.f
+   atmrot.f
+   kkrsed.f
+   bzmrot.f
+   gmtrns.f
+
+New subroutine
+   srtrns.f
+
+
+-------- old release information -----------------
+The following routine is replaced.
+   prmvec.f
+In addition plot routines that may be used for DOS
+plot are added. Those routines are compiled by the
+make command with parameter 'gpd' as
+> make gpd
+If the DOS output has been stored in a file,
+the dos curve can be plotted by a command
+>gpd 'name of the file'
+SInce the routine uses gnuplot, the gnuplot system must
+has been installed in advance.
+
+Release note for cpa2002v009c (J. Akai, Osaka, 23 Dec. 2007)
+
+Revised routines
+   spmain
+   bzmesh
+   bzmrot
+   etaopt
+
+New routines
+   setari
+   setarc
+
+--------------------------
+The main modification from the previous version (cpa2002v008)
+are the followings:
+
+1) In order to generate better optimized BZ mesh in the case
+   of tetragonal or orthorhombic structure with c/a and b/a
+   much different from 1, now the number of devision along
+   a, b, and c axes are determined independently. Also the
+   size of work area is greately reduced.
+
+2) The parameter "zero" in the "etaopt" is now set to be 1d-11.
+
+3) bzmrot is modified such that it gives correct rotation even
+   in the case where the spin-orbit coupling is included.
+
+4) Corresponding to the above modification, the calling
+   routines "spmain" is also modified.
+
+5) New routines setari and setarc are included though they are
+   not used at the moment. These routines are the integer
+   and complex verion of setarr and may be used for debugging.
+   
+6) Other unimportant modifications have been made.

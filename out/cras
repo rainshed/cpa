@@ -1,0 +1,367 @@
+ 12-Mar-2019
+    21:43:09
+    meshr   mse    ng   mxl
+      400    35    15     3
+
+
+
+   data read in
+   go=go   file=data/cras_lmd                                                   
+   brvtyp=fcc     a= 10.68000  c/a= 0.00000  b/a= 0.00000
+   alpha=  0.0  beta=  0.0  gamma=  0.0
+   edelt= 1.0E-03  ewidth=  1.500  reltyp=sra    sdftyp=mjw      
+   magtyp=mag 
+   record=2nd   outtyp=update  bzqlty=4       
+   maxitr= 50  pmix= 0.03000
+   ntyp=  4  natm=  4  ncmpx=  5
+
+
+   complex energy mesh
+   1( -1.5000, 0.0000)   2( -1.4998, 0.0035)   3( -1.4989, 0.0080) 
+   4( -1.4968, 0.0139)   5( -1.4921, 0.0216)   6( -1.4833, 0.0315) 
+   7( -1.4673, 0.0438)   8( -1.4401, 0.0588)   9( -1.3959, 0.0762) 
+  10( -1.3285, 0.0955)  11( -1.2322, 0.1149)  12( -1.1045, 0.1322) 
+  13( -0.9489, 0.1446)  14( -0.7761, 0.1499)  15( -0.6019, 0.1470) 
+  16( -0.4424, 0.1368)  17( -0.3089, 0.1213)  18( -0.2061, 0.1033) 
+  19( -0.1322, 0.0850)  20( -0.0821, 0.0682)  21( -0.0496, 0.0537) 
+  22( -0.0294, 0.0416)  23( -0.0172, 0.0319)  24( -0.0099, 0.0243) 
+  25( -0.0057, 0.0184)  26( -0.0032, 0.0139)  27( -0.0018, 0.0104) 
+  28( -0.0010, 0.0078)  29( -0.0006, 0.0059)  30( -0.0003, 0.0044) 
+  31( -0.0002, 0.0033)  32( -0.0001, 0.0025)  33( -0.0001, 0.0018) 
+  34( -0.0000, 0.0014)  35( -0.0000, 0.0010) 
+
+   file to be accessed=data/cras_lmd                                                                                                                                                                                                                                                   
+   created
+   rmt( 1)=   1.00000  rmt( 1)=   1.00000
+ ***wrn in chklat...given rmt's conflict; reduced
+   rmt( 1)=   0.35355  rmt( 2)=   0.35355
+ ***wrn in chklat...given rmt's conflict; reduced
+
+   lattice constant
+   bravais=fcc   a= 10.68000   c/a= 1.0000   b/a= 1.0000
+   alpha=  90.00   beta=  90.00   gamma=  90.00
+   unit cell volume=   304.54661(a.u.)
+   volume filling=  68.0%
+
+   primitive translation vectors (in unit of a)
+   a=(  0.00000  0.50000  0.50000)
+   b=(  0.50000  0.00000  0.50000)
+   c=(  0.50000  0.50000  0.00000)
+
+   reciprocal lattice vectors (in unit of 2*pi/a)
+   ga=( -1.00000  1.00000  1.00000)
+   gb=(  1.00000 -1.00000  1.00000)
+   gc=(  1.00000  1.00000 -1.00000)
+
+   type of site
+   type=Cr        rmt= 0.21651 field=  0.000   lmxtyp=  2
+                  component= 1  anclr=  24.  conc= 0.5000
+                  component= 2  anclr=  24.  conc= 0.5000
+   type=As        rmt= 0.21651 field=  0.000   lmxtyp=  2
+                  component= 1  anclr=  33.  conc= 1.0000
+   type=Vc1       rmt= 0.21651 field=  0.000   lmxtyp=  0
+                  component= 1  anclr=   0.  conc= 1.0000
+   type=Vc2       rmt= 0.21651 field=  0.000   lmxtyp=  0
+                  component= 1  anclr=   0.  conc= 1.0000
+
+   atoms in the unit cell
+   position=   0.00000000   0.00000000   0.00000000  type=Cr      
+   position=   0.25000000   0.25000000   0.25000000  type=As      
+   position=   0.50000000   0.50000000   0.50000000  type=Vc1     
+   position=   0.75000000   0.75000000   0.75000000  type=Vc2     
+
+ ***wrn in spmain...eof detected; data generated
+ ***msg in spmain...new ew, ez generated
+   ew=  -0.05002  ez=   1.45300
+
+   preta= 0.44780  eta= 0.44780
+
+   symop   E  C4*3   C2*3  C4^3*3   C3*4    C3^2*4      C2'*6
+     g     1  0 0 0  1 1 1  0 0 0  1 1 1 1  1 1 1 1  0 0 0 0 0 0
+     u     0  1 1 1  0 0 0  1 1 1  0 0 0 0  0 0 0 0  1 1 1 1 1 1
+
+   last= 243   np= 27   nt= 283   nrpt= 347   nk=   29   nd=   7
+
+   itr=  1      rms error = -0.032
+   itr=  2      rms error = -0.639
+   itr=  3      rms error = -1.287
+   itr=  4      rms error = -2.040
+   itr=  5      rms error = -2.164
+   itr=  6      rms error = -2.332
+   itr=  7      rms error = -2.925
+   itr=  8      rms error = -3.197
+   itr=  9      rms error = -3.703
+   itr= 10      rms error = -4.330
+   itr= 11      rms error = -5.314
+   itr= 12      rms error = -5.303
+   itr= 13      rms error = -5.573
+   itr= 14      rms error = -6.175
+   interval= 14     cpu time=      0.11 sec
+
+         nl      cnf         energy
+    -----------------------------------
+         1s     2.000       -428.1265
+         2s     2.000        -48.6430
+         2p     6.000        -41.4637
+         3s     2.000         -5.6764
+         3p     6.000         -3.6768
+         3d     4.000         -0.5488
+         4s     2.000         -0.4577
+
+
+
+   itr=  1      rms error =  0.455
+   itr=  2      rms error = -0.257
+   itr=  3      rms error = -0.760
+   itr=  4      rms error = -1.349
+   itr=  5      rms error = -1.472
+   itr=  6      rms error = -2.063
+   itr=  7      rms error = -2.431
+   itr=  8      rms error = -3.133
+   itr=  9      rms error = -3.233
+   itr= 10      rms error = -4.161
+   itr= 11      rms error = -4.039
+   itr= 12      rms error = -4.798
+   itr= 13      rms error = -4.990
+   itr= 14      rms error = -5.802
+   itr= 15      rms error = -5.765
+   itr= 16      rms error = -6.588
+   interval= 16     cpu time=      0.14 sec
+
+         nl      cnf         energy
+    -----------------------------------
+         1s     2.000       -846.7575
+         2s     2.000       -106.2784
+         2p     6.000        -95.1475
+         3s     2.000        -13.5569
+         3p     6.000         -9.7989
+         3d    10.000         -3.1807
+         4s     2.000         -1.1267
+         4p     3.000         -0.4848
+
+
+
+   record 1 will be overlaied by input and
+   record 2 will be replaced by new output.
+
+   core configuration for Z= 24
+   state  1s 2s 2p 3s 3p 3d 4s 4p 4d 5s 5p 4f 5d 6s 6p 5f 6d 7s
+    up     1  1  3  1  3  0  0  0  0  0  0  0  0  0  0  0  0  0
+   down    1  1  3  1  3  0  0  0  0  0  0  0  0  0  0  0  0  0
+
+   core configuration for Z= 24
+   state  1s 2s 2p 3s 3p 3d 4s 4p 4d 5s 5p 4f 5d 6s 6p 5f 6d 7s
+    up     1  1  3  1  3  0  0  0  0  0  0  0  0  0  0  0  0  0
+   down    1  1  3  1  3  0  0  0  0  0  0  0  0  0  0  0  0  0
+
+   core configuration for Z= 33
+   state  1s 2s 2p 3s 3p 3d 4s 4p 4d 5s 5p 4f 5d 6s 6p 5f 6d 7s
+    up     1  1  3  1  3  5  1  0  0  0  0  0  0  0  0  0  0  0
+   down    1  1  3  1  3  5  1  0  0  0  0  0  0  0  0  0  0  0
+
+   core configuration for Z=  0
+   state  1s 2s 2p 3s 3p 3d 4s 4p 4d 5s 5p 4f 5d 6s 6p 5f 6d 7s
+    up     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+   down    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+
+   core configuration for Z=  0
+   state  1s 2s 2p 3s 3p 3d 4s 4p 4d 5s 5p 4f 5d 6s 6p 5f 6d 7s
+    up     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+   down    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+
+   ***** self-consistent iteration starts *****
+       Cr As Vc1 Vc2
+   itr=  1 neu=    6.8534  moment=  0.1913  te=  -6601.34262660  err=  1.008
+   itr=  2 neu=    4.2763  moment= -0.4863  te=  -6611.37741336  err=  0.214
+   itr=  3 neu=   -0.9275  moment= -0.4533  te=  -6611.39542219  err=  0.718
+   itr=  4 neu=   -0.7796  moment= -0.4011  te=  -6611.58782030  err=  0.695
+   itr=  5 neu=    2.7690  moment=  1.0901  te=  -6612.64749253  err=  0.352
+   itr=  6 neu=    4.7061  moment=  0.2336  te=  -6611.14362754  err=  0.483
+   itr=  7 neu=    4.3341  moment=  0.0430  te=  -6609.86519945  err=  0.613
+   itr=  8 neu=    1.9330  moment=  1.7027  te=  -6612.78377041  err=  0.456
+   itr=  9 neu=    0.8029  moment=  2.0239  te=  -6612.85359090  err=  0.422
+   itr= 10 neu=    1.3981  moment=  2.7777  te=  -6613.18754294  err=  0.197
+   itr= 11 neu=    1.9304  moment=  3.8763  te=  -6613.38342005  err= -0.130
+   itr= 12 neu=    1.7830  moment=  4.0486  te=  -6613.13293289  err=  0.105
+   itr= 13 neu=    1.0035  moment=  3.9214  te=  -6613.18397156  err=  0.151
+   itr= 14 neu=    0.6703  moment=  3.5422  te=  -6612.86161769  err=  0.247
+   itr= 15 neu=    0.0368  moment=  2.9980  te=  -6613.31168597  err= -0.263
+   itr= 16 neu=   -0.6405  moment=  2.9850  te=  -6613.33325491  err= -0.403
+   itr= 17 neu=   -1.5967  moment=  2.9914  te=  -6613.36302854  err= -0.458
+   itr= 18 neu=   -2.1117  moment=  2.6768  te=  -6613.40514492  err=  0.132
+   itr= 19 neu=   -1.2893  moment=  2.9872  te=  -6613.36219327  err= -0.615
+   itr= 20 neu=   -0.7040  moment=  2.9671  te=  -6613.33449426  err= -0.499
+   itr= 21 neu=   -0.2554  moment=  2.9421  te=  -6613.33516294  err= -0.702
+   itr= 22 neu=    0.1573  moment=  2.9800  te=  -6613.32740222  err= -0.573
+   itr= 23 neu=    0.3076  moment=  3.1782  te=  -6613.24601039  err= -0.261
+   itr= 24 neu=    0.2480  moment=  2.9852  te=  -6613.33091724  err= -0.755
+   itr= 25 neu=    0.1226  moment=  2.9886  te=  -6613.32834221  err= -0.854
+   itr= 26 neu=   -0.0401  moment=  2.9824  te=  -6613.32792856  err= -1.118
+   itr= 27 neu=   -0.1591  moment=  2.9812  te=  -6613.32818452  err= -1.087
+   itr= 28 neu=   -0.2368  moment=  2.9765  te=  -6613.32790276  err= -0.898
+   itr= 29 neu=   -0.1547  moment=  2.9788  te=  -6613.32831520  err= -1.034
+   itr= 30 neu=   -0.0811  moment=  2.9790  te=  -6613.32848286  err= -1.364
+   itr= 31 neu=    0.0060  moment=  2.9797  te=  -6613.32883275  err= -1.473
+   itr= 32 neu=    0.0320  moment=  2.9809  te=  -6613.32911018  err= -1.346
+   itr= 33 neu=    0.0384  moment=  2.9806  te=  -6613.32909138  err= -1.251
+   itr= 34 neu=    0.0324  moment=  2.9814  te=  -6613.32895931  err= -1.275
+   itr= 35 neu=    0.0204  moment=  2.9813  te=  -6613.32880274  err= -1.447
+   itr= 36 neu=   -0.0068  moment=  2.9806  te=  -6613.32869808  err= -1.767
+   itr= 37 neu=   -0.0290  moment=  2.9803  te=  -6613.32866198  err= -1.799
+   itr= 38 neu=   -0.0361  moment=  2.9803  te=  -6613.32866887  err= -1.729
+   itr= 39 neu=   -0.0311  moment=  2.9802  te=  -6613.32870685  err= -1.699
+   itr= 40 neu=   -0.0202  moment=  2.9802  te=  -6613.32877248  err= -1.881
+   itr= 41 neu=   -0.0058  moment=  2.9803  te=  -6613.32884419  err= -2.120
+   itr= 42 neu=    0.0057  moment=  2.9804  te=  -6613.32889138  err= -2.185
+   itr= 43 neu=    0.0101  moment=  2.9805  te=  -6613.32890607  err= -2.011
+   itr= 44 neu=    0.0096  moment=  2.9805  te=  -6613.32889413  err= -1.994
+   itr= 45 neu=    0.0059  moment=  2.9805  te=  -6613.32887162  err= -2.121
+   itr= 46 neu=    0.0007  moment=  2.9805  te=  -6613.32885122  err= -2.290
+   itr= 47 neu=   -0.0038  moment=  2.9804  te=  -6613.32884019  err= -2.587
+   itr= 48 neu=   -0.0062  moment=  2.9804  te=  -6613.32883923  err= -2.657
+   itr= 49 neu=   -0.0062  moment=  2.9804  te=  -6613.32884667  err= -2.547
+   itr= 50 neu=   -0.0045  moment=  2.9804  te=  -6613.32885880  err= -2.535
+   *** no convergence
+   interval= 50     cpu time=    105.80 sec
+   sdftyp=mjw     reltyp=sra     dmpc= 0.03000
+       Cr As Vc1 Vc2
+   itr= 50  neu -0.0045  chr,spn 11.0000  2.9804  intc,ints  2.8929  0.1771
+   rms err= -2.563 -2.563 -2.818 -2.768 -2.851 -2.535
+            -2.535 -2.762 -2.778 -2.862
+   ef=   0.5478937   0.5291263  def=  18.0071174   0.2682148
+   total energy=  -6613.328858801
+
+
+
+
+
+
+
+                             *** type-Cr       Cr (z= 24.0) ***
+   core charge in the muffin-tin sphere =17.9557267
+   valence charge in the cell (spin up  ) =     0.14183(s)   0.10332(p)   3.45371(d)
+   valence charge in the cell (spin down) =     0.11378(s)   0.10277(p)   0.49340(d)
+   total charge=  22.36453   valence charge (up/down)=   3.69886   0.70995
+   spin moment=   2.98891  orbital moment=   0.00000
+   orbital current (up/down)=   0.00000   0.00000
+
+   core level  (spin up  )
+      -430.3232439 Ry(1s)       -48.2013892 Ry(2s)       -40.4540829 Ry(2p) 
+        -4.7455206 Ry(3s)        -2.6640744 Ry(3p) 
+   core level  (spin down)
+      -430.3418099 Ry(1s)       -48.1271781 Ry(2s)       -40.4006940 Ry(2p) 
+        -4.5409811 Ry(3s)        -2.4647617 Ry(3p) 
+
+   hyperfine field of Cr
+      -82.555 kG (core=  -330.972 kG  valence=   248.417 kG )
+   core contribution
+      -13.142 kG(1s)     -518.827 kG(2s)      200.997 kG(3s)
+
+   charge density at the nucleus
+       11364.6823 (core=    11359.7789  valence=        4.7754 )
+   core contribution
+       10289.4218(1s)         936.8864(2s)         133.4707(3s)
+
+
+
+                             *** type-Cr       Cr (z= 24.0) ***
+   core charge in the muffin-tin sphere =17.9557267
+   valence charge in the cell (spin up  ) =     0.14183(s)   0.10332(p)   3.45371(d)
+   valence charge in the cell (spin down) =     0.11378(s)   0.10277(p)   0.49340(d)
+   total charge=  22.36453   valence charge (up/down)=   3.69886   0.70995
+   spin moment=   2.98891  orbital moment=   0.00000
+   orbital current (up/down)=   0.00000   0.00000
+
+   core level  (spin up  )
+      -430.3232439 Ry(1s)       -48.2013892 Ry(2s)       -40.4540829 Ry(2p) 
+        -4.7455206 Ry(3s)        -2.6640744 Ry(3p) 
+   core level  (spin down)
+      -430.3418099 Ry(1s)       -48.1271781 Ry(2s)       -40.4006940 Ry(2p) 
+        -4.5409811 Ry(3s)        -2.4647617 Ry(3p) 
+
+   hyperfine field of Cr
+      -82.555 kG (core=  -330.972 kG  valence=   248.417 kG )
+   core contribution
+      -13.142 kG(1s)     -518.827 kG(2s)      200.997 kG(3s)
+
+   charge density at the nucleus
+       11364.6823 (core=    11359.7789  valence=        4.7754 )
+   core contribution
+       10289.4218(1s)         936.8864(2s)         133.4707(3s)
+
+
+
+                             *** type-As       As (z= 33.0) ***
+   core charge in the muffin-tin sphere =27.9795596
+   valence charge in the cell (spin up  ) =     0.70527(s)   0.82378(p)   0.04066(d)
+   valence charge in the cell (spin down) =     0.72244(s)   1.05071(p)   0.00512(d)
+   total charge=  31.32754   valence charge (up/down)=   1.56971   1.77827
+   spin moment=  -0.20856  orbital moment=   0.00000
+   orbital current (up/down)=   0.00000   0.00000
+
+   core level  (spin up  )
+      -858.5758069 Ry(1s)      -108.0600297 Ry(2s)       -94.7186611 Ry(2p) 
+       -12.9376924 Ry(3s)        -8.8156660 Ry(3p)        -2.0216946 Ry(3d) 
+        -0.2149725 Ry(4s)*
+   core level  (spin down)
+      -858.5962877 Ry(1s)      -108.0793416 Ry(2s)       -94.7385234 Ry(2p) 
+       -12.9581474 Ry(3s)        -8.8364855 Ry(3p)        -2.0437336 Ry(3d) 
+        -0.2392490 Ry(4s)*
+
+   hyperfine field of As
+     -254.918 kG (core=    10.402 kG  valence=  -265.320 kG )
+   core contribution
+        8.876 kG(1s)       -6.205 kG(2s)        7.731 kG(3s)
+
+   charge density at the nucleus
+       35369.3154 (core=    35324.9063  valence=       43.7509 )
+   core contribution
+       31614.2491(1s)        3209.7450(2s)         500.9122(3s)
+
+
+
+                             *** type-Vc1      Vc (z=  0.0) ***
+   core charge in the muffin-tin sphere = 0.0000000
+   valence charge in the cell (spin up  ) =     0.10072(s)
+   valence charge in the cell (spin down) =     0.11492(s)
+   total charge=   0.21565   valence charge (up/down)=   0.10072   0.11492
+   spin moment=  -0.01420  orbital moment=   0.00000
+   orbital current (up/down)=   0.00000   0.00000
+
+
+   hyperfine field of Vc
+        0.136 kG
+
+   charge density at the nucleus
+           0.0031
+
+
+
+                             *** type-Vc2      Vc (z=  0.0) ***
+   core charge in the muffin-tin sphere = 0.0000000
+   valence charge in the cell (spin up  ) =     0.11701(s)
+   valence charge in the cell (spin down) =     0.08234(s)
+   total charge=   0.19935   valence charge (up/down)=   0.11701   0.08234
+   spin moment=   0.03467  orbital moment=   0.00000
+   orbital current (up/down)=   0.00000   0.00000
+
+
+   hyperfine field of Vc
+       -0.481 kG
+
+   charge density at the nucleus
+           0.0031
+
+
+
+
+ 
+ sbtime report
+  routine           1         2         3         4
+  count          5452      5452      5452       100
+  cpu(sec)     306.00    162.73     33.96      6.31
+ 
+ total cpu          112.18 sec
+ elapsed time         2.48 sec ( 47 threads)
+
+

@@ -1,0 +1,134 @@
+ 12-Mar-2019
+    21:42:44
+    meshr   mse    ng   mxl
+      400    35    15     3
+
+
+
+   data read in
+   go=go   file=data/co                                                         
+   brvtyp=hcp     a=  4.74000  c/a= 1.62150  b/a= 0.00000
+   alpha=  0.0  beta=  0.0  gamma=  0.0
+   edelt= 1.0E-03  ewidth=  1.200  reltyp=nrl    sdftyp=mjw      
+   magtyp=mag 
+   record=2nd   outtyp=update  bzqlty=4       
+   maxitr=100  pmix= 0.03000
+   ntyp=  1  natm=  2  ncmpx=  1
+
+
+   complex energy mesh
+   1( -1.2000, 0.0000)   2( -1.1998, 0.0030)   3( -1.1990, 0.0070) 
+   4( -1.1970, 0.0121)   5( -1.1928, 0.0186)   6( -1.1849, 0.0267) 
+   7( -1.1710, 0.0368)   8( -1.1478, 0.0489)   9( -1.1111, 0.0629) 
+  10( -1.0562, 0.0779)  11( -0.9792, 0.0930)  12( -0.8787, 0.1063) 
+  13( -0.7577, 0.1158)  14( -0.6240, 0.1199)  15( -0.4891, 0.1179) 
+  16( -0.3646, 0.1104)  17( -0.2591, 0.0988)  18( -0.1764, 0.0850) 
+  19( -0.1156, 0.0708)  20( -0.0735, 0.0575)  21( -0.0455, 0.0458) 
+  22( -0.0276, 0.0360)  23( -0.0165, 0.0280)  24( -0.0098, 0.0216) 
+  25( -0.0057, 0.0165)  26( -0.0033, 0.0126)  27( -0.0019, 0.0096) 
+  28( -0.0011, 0.0073)  29( -0.0006, 0.0055)  30( -0.0004, 0.0042) 
+  31( -0.0002, 0.0032)  32( -0.0001, 0.0024)  33( -0.0001, 0.0018) 
+  34( -0.0000, 0.0014)  35( -0.0000, 0.0010) 
+
+   file to be accessed=data/co                                                                                                                                                                                                                                                         
+   rmt( 1)=   1.00000  rmt( 1)=   1.00000
+ ***wrn in chklat...given rmt's conflict; reduced
+
+   lattice constant
+   bravais=hcp   a=  4.74000   c/a= 1.6215   b/a= 1.0000
+   alpha=  90.00   beta=  90.00   gamma= 120.00
+   unit cell volume=   149.54869(a.u.)
+   volume filling=  73.5%
+
+   primitive translation vectors (in unit of a)
+   a=(  0.50000 -0.86603  0.00000)
+   b=(  0.50000  0.86603  0.00000)
+   c=(  0.00000  0.00000  1.62150)
+
+   reciprocal lattice vectors (in unit of 2*pi/a)
+   ga=(  1.00000 -0.57735  0.00000)
+   gb=(  1.00000  0.57735  0.00000)
+   gc=(  0.00000  0.00000  0.61671)
+
+   type of site
+   type=Co        rmt= 0.49766 field=  0.000   lmxtyp=  2
+                  component= 1  anclr=  27.  conc= 1.0000
+
+   atoms in the unit cell
+   position=   0.00000000   0.00000000   0.00000000  type=Co      
+   position=   0.50000000   0.28867513   0.81075000  type=Co      
+
+   ew=   0.09998  ez=   1.30300
+
+   preta= 0.25191  eta= 0.25191
+
+   symop   E C6 C3 C2 C3- C6-     C2'*6
+     g     1  1  1  1  1   1   1 1 1 1 1 1
+     u     1  1  1  1  1   1   1 1 1 1 1 1
+
+   nfa=  4  nfb=  4  nfc=  2
+   last= 243   np= 35   nt= 311   nrpt= 221   nk=   30   nd=   3
+
+   record 1 will be overlaied by input and
+   record 2 will be replaced by new output.
+
+   core configuration for Z= 27
+   state  1s 2s 2p 3s 3p 3d 4s 4p 4d 5s 5p 4f 5d 6s 6p 5f 6d 7s
+    up     1  1  3  1  3  0  0  0  0  0  0  0  0  0  0  0  0  0
+   down    1  1  3  1  3  0  0  0  0  0  0  0  0  0  0  0  0  0
+
+   ***** self-consistent iteration starts *****
+       Co_2
+   itr=  1 neu=   -0.0000  moment=  3.1451  te=  -5521.49929987  err= -6.050
+   interval=  1     cpu time=      1.41 sec
+   sdftyp=mjw     reltyp=nrl     dmpc= 0.03000
+       Co_2
+   itr=  1  neu -0.0000  chr,spn 18.0000  3.1451  intc,ints  1.5408 -0.0892
+   rms err= -6.099 -6.050
+   ef=   0.6798751   0.6995268  def=   0.7213128  22.3289526
+   total energy=  -5521.499299868
+
+
+
+
+
+
+
+                             *** type-Co       Co (z= 27.0) ***
+   core charge in the muffin-tin sphere =17.9895777
+   valence charge in the cell (spin up  ) =     0.22411(s)   0.21664(p)   4.48760(d)
+   valence charge in the cell (spin down) =     0.23353(s)   0.25639(p)   2.82178(d)
+   total charge=  26.22962   valence charge (up/down)=   4.92834   3.31170
+   spin moment=   1.61665  orbital moment=   0.00000
+   orbital current (up/down)=   0.00000   0.00000
+
+   core level  (spin up  )
+      -549.9390023 Ry(1s)       -63.5141149 Ry(2s)       -55.0494830 Ry(2p) 
+        -6.1024216 Ry(3s)        -3.5787587 Ry(3p) 
+   core level  (spin down)
+      -549.9188903 Ry(1s)       -63.4185942 Ry(2s)       -54.9722648 Ry(2p) 
+        -5.9422173 Ry(3s)        -3.4227737 Ry(3p) 
+
+   hyperfine field of Co
+     -226.537 kG (core=  -168.075 kG  valence=   -58.462 kG )
+   core contribution
+      -16.731 kG(1s)     -405.324 kG(2s)      253.980 kG(3s)
+
+   charge density at the nucleus
+       13266.9034 (core=    13261.1351  valence=        5.7683 )
+   core contribution
+       11998.3403(1s)        1102.4343(2s)         160.3605(3s)
+
+
+
+
+ 
+ sbtime report
+  routine           1         2         3         4
+  count            92        92        92         2
+  cpu(sec)       4.54      2.29      0.66      0.05
+ 
+ total cpu            6.78 sec
+ elapsed time         0.42 sec ( 47 threads)
+
+
